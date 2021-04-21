@@ -1,8 +1,7 @@
-.lib-font(
-    @_color: @color__black,
+.lib-font(@_color: @color__black,
     @_font-size: 18px,
     @_font-weight: 400,
-    @_font-style: normal, 
+    @_font-style: normal,
     @_font-family: @font_roboto,
     @_line-height: unset,
     @_text-align: inherit,
@@ -16,30 +15,48 @@
     text-align: @_text-align;
 }
 
-.lib-break_size (
-    @_size1: .9em ,
-    @_size2: .8em,
-    @_size3: .7em
-){
-    @media ( max-width: @screen-xl - 1 ) {
+.lib-break_size (@_size1,
+    @_size2,
+    @_size3,
+    @_size4,
+    @_size5,
+    @_size6) {
+    @media (max-width: @screen-xl - 1) {
         font-size: @_size1;
     }
+
     @media (max-width: @screen-lg - 1) {
         font-size: @_size2;
     }
+
     @media (max-width: @screen-md - 1) {
         font-size: @_size3;
     }
+
+    @media (max-width: @screen-md - 1) {
+        font-size: @_size4;
+    }
+
+    @media (max-width: @screen-sm - 1) {
+        font-size: @_size5;
+    }
+
+    @media (max-width: 480px - 1) {
+        font-size: @_size6;
+    }
 }
 
-.lib-button
-    (
-    @_color: @color__white,
+.lib-break_size__title() {
+    // 48px;
+
+}
+
+.lib-button (@_color: @color__white,
     @_font-size: 18px,
     @_font-weight: 500,
     @_font-style: normal,
     @_font-family: @font_roboto,
-    
+
     @_text-transform: uppercase,
     @_text-align: center,
 
@@ -49,29 +66,29 @@
     @_color-hover: @color__white,
     @_color-active: @color__white,
     @_border-radius: 6px,
-    @_padding: 10px 35px,
+    @_padding: 0.55555em 1.94444em,
 
     @_width: auto,
 ) {
-    .lib-font(
-        @_color: @_color,
+    .lib-font(@_color: @_color,
         @_font-size: @_font-size,
         @_font-weight: @_font-weight,
         @_font-style: @_font-style,
         @_font-family: @_font-family,
-        @_text-align: @_text-align
-    );
+        @_text-align: @_text-align );
 
     &:hover {
         color: @_color-hover;
         background-color: @_bg-color-hover;
         border: none;
     }
+
     &:active {
         color: @_color-active;
         background-color: @_bg-color-active;
         border: none;
     }
+
     display: inline-block;
     width: @_width;
     border: none;
@@ -84,27 +101,22 @@
     white-space: nowrap;
 }
 
-.lib-link
-    (
-    @_color: @color__black,
+.lib-link (@_color: @color__black,
     @_font-size: 18px,
     @_font-weight: 400,
-    @_font-style: normal, 
+    @_font-style: normal,
     @_font-family: @font_roboto,
 
     @_color-hover: @color__black,
     @_text-decoration: none,
     @_color-active: @color__black,
 
-    @_color-visited: @color__black
-) {
-    .lib-font(
-        @_color: @_color,
+    @_color-visited: @color__black) {
+    .lib-font(@_color: @_color,
         @_font-size: @_font-size,
         @_font-weight: @_font-weight,
         @_font-style: @_font-style,
-        @_font-family: @_font-family
-    );
+        @_font-family: @_font-family );
 
     &:visited {
         color: @_color-visited;
@@ -115,6 +127,7 @@
         color: @_color-active;
         text-decoration: @_text-decoration;
     }
+
     &:hover {
         color: @_color-hover;
         text-decoration: @_text-decoration;
@@ -123,16 +136,14 @@
     text-decoration: @_text-decoration;
 }
 
-.icon(
-    @url,
+.icon(@url,
     @_padding: 0,
     @_min-width: auto,
     @_min-height: auto,
     @_border-radius: unset,
     @_display: inline-block,
     @_position: relative,
-    @_background-position: left top
-) {
+    @_background-position: left top) {
     display: @_display;
     padding: @_padding;
     position: @_position;
@@ -149,26 +160,24 @@
     -o-transform: @_transform;
     transform: @_transform;
 }
+
 .lib_transition(@_transition) {
     -webkit-transition: @_transition;
     -o-transition: @_transition;
     transition: @_transition;
 }
-.lib-title(
-    @_font-size: 48px,
+
+.lib-title(@_font-size: 48px,
     @_font-weight: 700,
     @_line-height: 1.2em,
     @_text-align: center,
 
     @_span-display: block,
-    @_span-line-height: 15px
-){
-    .lib-font(
-        @_font-size: @_font-size,
+    @_span-line-height: 15px) {
+    .lib-font(@_font-size: @_font-size,
         @_font-weight: @_font-weight,
         @_line-height: @_line-height,
-        @_text-align: @_text-align
-    );
+        @_text-align: @_text-align );
 
     span {
         display: @_span-display;
@@ -181,10 +190,12 @@
     display: -ms-flexbox;
     display: flex;
 }
+
 .lib_flex-wrap (@_warp) {
     -ms-flex-wrap: @_warp;
     flex-wrap: @_warp;
 }
+
 .lib_justify-content (@_value) {
     -webkit-box-pack: @_value;
     -ms-flex-pack: @_value;
@@ -209,6 +220,7 @@
     -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
 }
+
 .lib_flex-dir__column {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

@@ -1,20 +1,41 @@
 .utility {
     padding-bottom: 80px;
+
     .item-header {
         .lib-title();
+
+        @media (max-width: @screen-lg) {
+            font-size: 40px;
+        }
+
+        @media (max-width: @screen-md) {
+            font-size: 36px;
+        }
+
+        @media (max-width: @screen-sm) {
+            font-size: 32px;
+        }
+
+        @media (max-width: 370px) {
+            font-size: 28px;
+        }
     }
+
     &--left {
         width: 74 / 132 * 100%;
         padding-left: 15px;
         padding-right: 15px;
         padding-top: 44px;
+
         .item {
             &-header {
                 margin-bottom: 40px;
             }
+
             &-body {
                 background-color: @bg-gray-light;
                 padding-bottom: 14px;
+
                 &--media {
                     img {
                         width: 100%;
@@ -23,27 +44,50 @@
 
                 &--text {
                     padding: 20px 29px 9px;
-                    .lib-font(
-                        @_color: @bg-content,
+                    .lib-font(@_color: @bg-content,
                         @_font-size: 18px,
                         @_font-weight: 400,
-                        @_line-height: 28px,
-                    ) 
+                        @_line-height: 1.5555555em,
+                        @_text-align: justify,
+                    );
+
+                    @media (max-width: @screen-md) {
+                        font-size: 16px;
+                    }
+
+                    @media (max-width: 480px) {
+                        font-size: 15px;
+                    }
+
+                    @media (max-width: 370px) {
+                        font-size: 13px;
+                    }
                 }
 
-                &--basedOn{
+                &--basedOn {
                     padding-right: 28px;
-                    .lib-font(
-                        @_color: @color__gray,
+                    .lib-font(@_color: @color__gray,
                         @_font-size: 18px,
                         @_font-weight: 700,
-                        @_line-height: 28px,
-                        @_text-align: end
-                    ) 
+                        @_line-height: 1.5555555em,
+                        @_text-align: end);
+
+                    @media (max-width: @screen-md) {
+                        font-size: 16px;
+                    }
+
+                    @media (max-width: 480px) {
+                        font-size: 15px;
+                    }
+
+                    @media (max-width: 370px) {
+                        font-size: 13px;
+                    }
+
                 }
             }
         }
-        
+
         .slick-dots {
             position: absolute;
             .lib_transform(translateX(-50%));
@@ -55,9 +99,11 @@
             margin-bottom: 0;
             padding: 20px 0;
             padding-right: 10px;
+
             li {
                 margin-left: 9px;
             }
+
             .icon-control {
                 color: @color__gray;
 
@@ -66,6 +112,7 @@
                     color: @color__orange;
                 }
             }
+
             .slick-active {
                 .icon-control {
                     font-weight: 900;
@@ -83,6 +130,7 @@
         .item {
             background-color: @bg-gray-light;
             padding: 44px;
+
             &-header {
                 margin-bottom: 40px;
             }
@@ -98,10 +146,10 @@
                     width: 100%;
                     padding: 0 0 0 20px;
                     .lib-font();
-
                 }
+
                 &__textarea {
-                    height: 176px;
+                    min-height: 176px;
 
                     background-color: @color__white;
                     border: 1px solid @color-light;
@@ -115,13 +163,59 @@
                 .btn-orange {
                     font-size: 24px;
                     font-weight: 500;
+
+                    @media (max-width: @screen-md) {
+                        font-size: 20px;
+                    }
+
+                    @media (max-width: 480px) {
+                        font-size: 18px;
+                    }
+
+                    @media (max-width: 370px) {
+                        font-size: 16px;
+                    }
                 }
+
+                @media (max-width: @screen-md) {
+                    .item-body__input {
+                        height: 48px;
+                    }
+
+                    .item-body__textarea {
+                        min-height: 140px;
+                    }
+
+                    .item-body__input,
+                    .item-body__textarea {
+                        font-size: 16px;
+                    }
+                }
+
+                @media (max-width: 480px) {
+                    .item-body__input {
+                        height: 40px;
+                    }
+
+                    .item-body__textarea {
+                        min-height: 100px;
+                    }
+
+                    .item-body__input,
+                    .item-body__textarea {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            @media (max-width: 480px) {
+                padding: 30px;
             }
         }
     }
 }
 
-@media ( max-width: @screen-xl - 1 ) {
+@media (max-width: @screen-xl - 1) {
     .utility {
         &--left {
             width: 100%;
@@ -130,6 +224,7 @@
                 &-header {
                     margin-bottom: 40px;
                 }
+
                 &-body {
                     background-color: @bg-gray-light;
                     padding-bottom: 14px;
@@ -137,26 +232,14 @@
             }
 
         }
-    
+
         &--right {
             width: 100%;
             margin-top: 80px;
-            .item {
-                background-color: @bg-gray-light;
-                padding: 44px;
-                &-header {
-                }
-    
-                &-body {
-
-                }
-            }
         }
     }
 }
-@media (max-width: @screen-lg - 1) {
 
-}
-@media (max-width: @screen-md - 1) {
+@media (max-width: @screen-lg - 1) {}
 
-}
+@media (max-width: @screen-md - 1) {}

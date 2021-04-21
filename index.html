@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="assets/lib/slick/css/slick.css" />
     <link href="assets/lib/fontawesome/css/all.css" rel="stylesheet">
 
-    <link rel="stylesheet/less" type="text/css" href="assets/css/styles.less" />
+    <link rel="stylesheet/less" type="text/css" href="assets/less/styles.less" />
     <script src="//cdn.jsdelivr.net/npm/less@3.13"></script>
 </head>
 
@@ -30,19 +30,21 @@
                     <img src="assets/images/logo_gocheap.png" alt="logo">
                 </a>
             </div>
-            <ul class="nav-list">
-                <div class="close">
-                    <i class="fas fa-times"></i>
-                </div>
-                <li><a href="#">Dịch vụ </a></li>
-                <li><a href="#">Tại sao chọn GOCHEAP</a></li>
-                <li><a href="#">Bảng giá</a></li>
-                <li><a href="#">Tài xế</a></li>
-                <li><a href="#">Báo chí nói về GOCHEAP</a></li>
+            <div class="nav-list">
+                <ul>
+                    <div class="close">
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <li><a href="#dichvu">Dịch vụ </a></li>
+                    <li><a href="#taisaochongocheap">Tại sao chọn GOCHEAP</a></li>
+                    <li><a href="#banggia">Bảng giá</a></li>
+                    <li><a href="#taixe">Tài xế</a></li>
+                    <li><a href="#baochinoivegocheap">Báo chí nói về GOCHEAP</a></li>
+                </ul>
                 <div class="header--content__button">
-                    <a href="#" class="btn-link-orange">Đặt ngay</a>
+                    <a href="tel:02473000636" class="btn-link-orange">Đặt ngay</a>
                 </div>
-            </ul>
+            </div>
             <div class="background"></div>
         </div>
     </div>
@@ -64,7 +66,7 @@
                         </i>Trải nghiệm dịch vụ đẳng cấp</p>
                 </div>
                 <div class="banner--content__botton">
-                    <button class="btn-orange w-100">Đặt ngay</button>
+                    <a href="tel:02473000636" class="btn-link-orange w-100">Đặt ngay</a>
                 </div>
             </div>
         </div>
@@ -81,7 +83,7 @@
             </div>
             <div class="intro--content">
                 <div class="row">
-                    <div class="col col-12 col-md-8 col-lg-4 mt-lg-0 my-sm-4 my-lg-0 mx-auto">
+                    <div class="col col-12 col-md-8 col-lg-4 mt-lg-0 my-4 my-lg-0 my-lg-0 mx-auto">
                         <div class="item">
                             <div class="intro--content__icon">
                                 <i class='icon-clock bg-orange'>
@@ -94,7 +96,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col col-12 col-md-8 col-lg-4 mx-auto  mt-lg-0 my-lg-0 my-sm-4 ">
+                    <div class="col col-12 col-md-8 col-lg-4 mx-auto  mt-lg-0 my-lg-0 my-4 ">
                         <div class="item">
                             <div class="intro--content__icon">
                                 <i class='icon-map bg-orange'>
@@ -109,7 +111,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col col-12 col-md-8 col-lg-4 mx-auto  mt-lg-0 my-lg-0 my-sm-4 ">
+                    <div class="col col-12 col-md-8 col-lg-4 mx-auto  mt-lg-0 my-lg-0 my-4 ">
                         <div class="item">
                             <div class="intro--content__icon">
                                 <i class='icon-avata bg-orange'>
@@ -130,7 +132,7 @@
     </div>
     <!-- end intro -->
     <!-- start engaging -->
-    <div class="engaging">
+    <div class="engaging" id="taisaochongocheap">
         <div class="container-xxl container-xl">
             <div class="engaging--left">
                 <div class="engaging--left__title">
@@ -203,7 +205,7 @@
     </div>
     <!-- end engaging -->
     <!-- start price-list -->
-    <div class="price-list bg-orange">
+    <div class="price-list bg-orange" id="banggia">
         <div class="price-list--inner container-xxl container-xl">
             <div class="price-list--inner__title">
                 Bảng giá dịch vụ GOCHEAP
@@ -211,7 +213,7 @@
             </div>
             <div class="price-list--inner__content">
                 <div class="row">
-                    <div class="col col-12 col-md-6 col-sm-12 col-xl-4">
+                    <div class="mx-auto col col-12 col-md-6 col-xl-4">
                         <div class="item">
                             <div class="item-header">
                                 Lái xe theo giờ
@@ -225,7 +227,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col col-12 col-md-6 col-sm-12 col-xl-4">
+                    <div class="mx-auto col col-12 col-md-6  col-xl-4">
                         <div class="item">
                             <div class="item-header">
                                 Lái xe theo ngày
@@ -239,7 +241,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col col-12 col-xl-4 col-sm-12">
+                    <div class="mx-auto col col-12 col-md-8 col-lg-6 col-xl-4 ">
                         <div class="item">
                             <div class="item-header">
                                 Lái xe theo yêu cầu
@@ -267,7 +269,7 @@
     </div>
     <!-- end price-list -->
     <!-- start info-taxi -->
-    <div class="info-taxi">
+    <div class="info-taxi" id="taixe">
         <div class="contain">
             <div class="container-xxl">
                 <div class="contain--title">
@@ -406,7 +408,7 @@
     </div>
     <!-- end info-taxi -->
     <!-- start utility -->
-    <div class="utility container-xxl container-xl">
+    <div class="utility container-xxl container-xl" id="baochinoivegocheap">
         <div class="row">
             <div class="utility--left">
                 <div id="slide2">
@@ -542,7 +544,7 @@
                             <input type="text" class='item-body__input' placeholder="Email">
                             <textarea name="" class='item-body__textarea'
                                 placeholder="Để lại lời nhắn cho chúng tôi"></textarea>
-                            <button type="submit" class="btn-orange w-100">yêu cầu thuê lái xe</button>
+                            <button type="submit" class="btn-orange w-100">SUBMIT</button>
                         </div>
                     </form>
                 </div>
@@ -563,8 +565,8 @@
             </div>
             <div class="footer--right">
                 <div class="footer--right__app">
-                    <a href="#"><i class="icon-appstore"></i></a>
-                    <a href="#" class="ml-2"><i class="icon-google-play"></i></a>
+                    <a href="https://apps.apple.com/vn/app/new-gocheap/id1561728668" class="mx-2"><i class="icon-appstore"></i></a>
+                    <a href="#"><i class="icon-google-play"></i></a>
                 </div>
                 <div class="footer--right__social">
                     <span class="mb-2">Liên kết với chúng tôi</span>

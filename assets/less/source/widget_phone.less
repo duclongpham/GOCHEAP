@@ -1,29 +1,28 @@
 .phone-call {
     display: inline-block;
     position: fixed;
-    right: 30px;
+    left: 30px;
     bottom: 30px;
-    &__icon {
-        
-    }
+
+    &__icon {}
+
     &__button {
         border-radius: 64px;
-        padding-top: 16px;
-        padding-bottom: 10px;
-        padding-left: 15px;
-        padding-right: 18px;
+        padding: 16px 18px 10px 15px;
         border: none;
-        background-color: @color__blue--light;
+        background-color: @color__orange;
 
-        
-        
         &:visited,
         &:active,
         &:hover,
         &:focus {
-            background-color: darken(@color__blue--light, 10%);
+            background-color: darken(@color__orange, 10%);
             border: none;
             outline: none;
+        }
+
+        @media (max-width: @screen-md) {
+            padding: 10px 12px 4px 9px;
         }
     }
 }
