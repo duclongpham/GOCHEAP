@@ -1,0 +1,186 @@
+@font-face {
+    font-family: "UTM Bebas";
+    src: url("../font/UTM_Bebas.ttf");
+}
+@font-utm: "UTM Bebas";
+.container-xxl {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+
+    @media (min-width: 1320px) {
+        max-width: 1320px;
+    }
+}
+
+.btn-orange {
+    .lib-button();
+}
+
+.btn-link-orange {
+    .lib-button();
+    &:visited,
+    &:active,
+    &:hover{
+        text-decoration: none;
+    }
+}
+.bg-orange {
+    background-color: @color__orange;
+}
+.color-orange {
+    color: @color__orange;
+}
+
+.custom--straight {
+    height: 0.7em;
+    width: 2px;
+    display: inline-block;
+}
+
+.icon-avata {
+    .icon(
+        "../images/avata_icon.png",
+        @_padding: 70px 70px,
+        @_border-radius: 70px,
+        @_background-position: center
+    );
+}
+
+.icon-map {
+    .icon(
+        "../images/Map_icon.png",
+        @_padding: 70px 70px,
+        @_border-radius: 70px,
+        @_background-position: center
+    );
+}
+
+.icon-clock {
+    .icon(
+        "../images/clock_icon.png",
+        @_padding: 70px 70px,
+        @_border-radius: 70px,
+        @_background-position: center
+    );
+}
+
+.icon-check {
+    .icon(
+        "../images/checked.png",
+        @_padding: 12px 19px
+    );
+}
+
+.icon-under {
+    .icon(
+        "../images/underlined.png",
+        @_padding: 4px 44px
+    );
+}
+
+.icon-under-white {
+    .icon(
+        "../images/underlined_white.png",
+        @_padding: 4px 44px
+    );
+}
+
+.icon-pig {
+    border: 1px solid @color-light;
+    background-color: @bg-gray-light;
+    .icon(
+        "../images/pig_icon.png",
+        @_padding: 59px 59px,
+        @_border-radius: 59px,
+        @_background-position: center
+    );
+}
+.icon-star {
+    border: 1px solid @color-light;
+    background-color: @bg-gray-light;
+    .icon(
+        "../images/star_icon.png",
+        @_padding: 59px 59px,
+        @_border-radius: 59px,
+        @_background-position: center
+    );
+}
+.icon-steering {
+    border: 1px solid @color-light;
+    background-color: @bg-gray-light;
+    .icon(
+        "../images/steering_icon.png",
+        @_padding: 59px 59px,
+        @_border-radius: 59px,
+        @_background-position: center
+    );
+}
+.icon-human {
+    border: 1px solid @color-light;
+    background-color: @bg-gray-light;
+    .icon(
+        "../images/human_icon.png",
+        @_padding: 59px 59px,
+        @_border-radius: 59px,
+        @_background-position: center
+    );
+}
+
+.icon-star-point {
+    .icon(
+        "../images/star.png",
+        @_padding: 8px 8px,
+        @_background-position: center
+    );
+}
+
+.icon-facebook {
+    .icon(
+        "../images/facebook_icon.png",
+        @_padding: 16px 16px,
+        @_background-position: center
+    );
+}
+
+.icon-twitter {
+    .icon(
+        "../images/twitter_icon.png",
+        @_padding: 16px 16px,
+        @_background-position: center
+    );
+}
+
+.icon-youtube {
+    .icon(
+        "../images/youtube_icon.png",
+        @_padding: 16px 16px,
+        @_background-position: center
+    );
+}
+
+.icon-instagram {
+    .icon(
+        "../images/instagram_icon.png",
+        @_padding: 16px 16px,
+        @_background-position: center
+    );
+}
+
+.icon-appstore {
+    .icon(
+        "../images/appstore.png",
+        @_padding: 31px 105px,
+        @_background-position: center
+    );
+}
+
+.icon-google-play{
+    .icon(
+        "../images/google_play.png",
+        @_padding: 31px 105px,
+        @_background-position: center
+    );
+}

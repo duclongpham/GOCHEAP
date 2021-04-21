@@ -1,0 +1,52 @@
+.intro {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: @bg-gray-light;
+    &--title {
+        margin-bottom: 55px;
+        .lib-font(
+            @_font-size: 48px,
+            @_font-weight: 700,
+            @_line-height: 1.2em,
+            @_text-align: center
+        );
+
+        span {
+            display: block;
+            line-height: 15px;
+        }
+    }
+    &--content {
+        &__icon {
+            margin: 22px 0;
+        }
+
+        &__title {
+            .lib-font(
+                @_font-size: 24px,
+                @_font-weight: 500,
+            );
+            margin-top: 36px;
+            margin-bottom: 12px;
+        }
+
+        &__text {
+            .lib-font(
+                @_color: @bg-content,
+                @_font-size: 18px,
+                @_font-weight: 400,
+                @_font-family: @font_roboto,
+                @_line-height: 28px,
+                @_text-align: start
+            );
+            margin-bottom: 4px;
+        }
+        .col {
+            text-align: center;
+            .item {
+                padding: 50px 37px;
+                background-color: @color__white;
+            }
+        }
+    }
+}

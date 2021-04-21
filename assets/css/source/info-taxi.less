@@ -1,0 +1,131 @@
+.info-taxi {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    .slick-slide {
+        outline: none;
+    }
+    .contain {
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        &--title {
+            .lib-title();
+            margin-bottom: 53px;
+        }
+
+        &--card {
+            position: relative;
+            overflow: hidden;
+            &__background {
+                img {
+                    width: 100%;
+                }
+            }
+            &__content {
+                position: absolute;
+                bottom: 0;
+                background-color: @color__orange;
+                opacity: .9;
+                .lib_transform(translateY(100%));
+                .lib_transition(all 0.3s ease 0s);
+                .item {
+                    min-height: 176px;
+                    opacity: 1;
+                    padding: 10px 27px;
+                    padding-bottom: 16px;
+                    &--point {
+                        margin-bottom: 7px;
+                        i {
+                            margin-right: 2px;
+                        }
+                    }
+
+                    &--header {
+                        margin-bottom: 5px;
+                        .lib-font(
+                            @_color: @color__white,
+                            @_font-size: 20px,
+                            @_font-weight: 700,
+                            @_font-style: normal, 
+                        );
+                    }
+
+                    &--body {
+                        .lib-font(
+                            @_color: @color__white,
+                            @_font-size: 18px,
+                            @_font-weight: 400,
+                            @_line-height: 28px
+                        );
+                    }
+                }
+            }
+
+            &.active,
+            &:hover {
+                .contain--card__content {
+                    .lib_transform(translateY(0%));
+                }
+            }
+        }
+
+        .row {
+            position: relative;
+            .arrow {
+                @border-color: @color-light;
+                @border-hover: @color__orange;
+                font-size: 38px;
+                &-prev {
+                    position: absolute;
+                    left: -81px;
+                    top: 50%;
+                    .lib_transform(translateY(-50%));
+                    color: @border-color;
+                    padding: 0 16px;
+                    padding-right: 19px;
+                    padding-left: 13px;
+                    border: 4px solid @border-color;
+                    border-radius: 64px;
+                    background: rgba(255,255,255,0.3);
+    
+                    &:hover,
+                    &:active,
+                    &:visited {
+                        color: @border-hover;
+                        border-color: @border-hover;
+                    }
+
+                    @media (max-width: 1500px) {
+                        left: 0px;
+                    }
+                }
+    
+                &-next {
+                    position: absolute;
+                    right: -81px;
+                    top: 50%;
+                    .lib_transform(translateY(-50%));
+                    color: @border-color;
+                    padding: 0 16px;
+                    padding-left: 19px;
+                    padding-right: 13px;
+                    border: 4px solid @border-color;
+                    border-radius: 64px;
+                    background: rgba(255,255,255,0.3);
+    
+                    &:hover,
+                    &:active,
+                    &:visited {
+                        color: @border-hover;
+                        border-color: @border-hover;
+                    }
+
+                    @media (max-width: 1500px) {
+                        right: 0px;
+                    }
+                }
+            }
+            
+        }
+    }
+}
