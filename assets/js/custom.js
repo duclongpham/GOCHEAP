@@ -31,25 +31,15 @@ $(document).ready(function () {
     });
 
     var nav_list = $('.header .nav-list');
-    var header = $('.header');
-    var icon_show = header.find('.menu .show');
-    var icon_close = header.find('.menu .close');
     $('.header').find('.menu, .nav-list a').on('click', function () {
         if(!nav_list.hasClass('nav-list-show')) {
             nav_list.addClass('nav-list-show');
-            // icon_show.css({'display': "none"})
-            // icon_close.css({'display': "inline-block"})
-            
-        } else {
-            
-        }
+        } 
     });
 
     $('.header').find('.background, .close, .nav-list a').on('click', function () {
         setTimeout(function(){
             nav_list.removeClass('nav-list-show');
-            // icon_show.css({'display': "inline-block"})
-            // icon_close.css({'display': "none"})
         },100);
     })
 })
