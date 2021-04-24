@@ -49,10 +49,6 @@
                 @media (max-width: 480px) {
                     font-size: 20px;
                 }
-
-                @media (max-width: 370px) {
-                    font-size: 18px;
-                }
             }
         }
 
@@ -85,6 +81,11 @@
         img {
             height: 740px;
             text-align: center;
+
+            @media (min-width: 1920px) {
+                height: unset;
+                width: 100%;
+            }
         }
     }
 

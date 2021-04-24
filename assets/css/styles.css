@@ -433,9 +433,16 @@
   top: 0;
   left: 0;
   width: 100%;
-  min-height: 180px;
   z-index: 10;
+}
+.header:not(.hasTop) {
   background: linear-gradient(180deg, #ffffff 38.02%, rgba(196, 196, 196, 0) 100%);
+  min-height: 180px;
+}
+.header.hasTop {
+  background: white;
+  padding-bottom: 13px;
+  border-bottom: 1px solid #e5e5e5;
 }
 .header--content {
   display: -webkit-box;
@@ -536,7 +543,7 @@
   }
 }
 @media (max-width: 991px) {
-  .header {
+  .header:not(.hasTop) {
     min-height: 100px;
   }
   .header--content .menu {
@@ -696,11 +703,6 @@
     font-size: 20px;
   }
 }
-@media (max-width: 370px) {
-  .banner--content__content p {
-    font-size: 18px;
-  }
-}
 .banner--content__botton {
   margin-bottom: 25px;
   margin-top: 32px;
@@ -730,6 +732,12 @@
 .banner--background img {
   height: 740px;
   text-align: center;
+}
+@media (min-width: 1920px) {
+  .banner--background img {
+    height: unset;
+    width: 100%;
+  }
 }
 .banner .container-xxl {
   width: 100%;
@@ -1304,6 +1312,11 @@
 @media (max-width: 768px) {
   .price-list--inner__content .item {
     min-height: 300px;
+  }
+}
+@media (max-width: 375px) {
+  .price-list--inner__content .item {
+    min-height: 250px;
   }
 }
 .info-taxi {

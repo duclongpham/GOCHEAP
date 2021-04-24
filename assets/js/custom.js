@@ -42,4 +42,12 @@ $(document).ready(function () {
             nav_list.removeClass('nav-list-show');
         },100);
     })
+    
+    $(window).scroll(function () {
+        if($(window).scrollTop() == 0) {
+            $('.header').removeClass('hasTop');
+        } else {
+            $('.header').addClass('hasTop');
+        }
+    });
 })
