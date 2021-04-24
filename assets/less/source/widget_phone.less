@@ -2,9 +2,11 @@
     display: inline-block;
     position: fixed;
     left: 30px;
-    bottom: 30px;
+    bottom: 7%;
 
-    &__icon {}
+    @media (max-width: @screen-md) {
+        left: 7%;
+    }
 
     &__button {
         border-radius: 64px;
@@ -22,7 +24,7 @@
         }
 
         @media (max-width: @screen-md) {
-            padding: 10px 12px 4px 9px;
+            padding: 13px 15px 7px 12px;
         }
     }
 }

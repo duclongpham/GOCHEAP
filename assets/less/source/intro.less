@@ -1,6 +1,12 @@
 .intro {
     padding-top: 80px;
     padding-bottom: 80px;
+
+    @media (max-width: @screen-md) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
     background-color: @bg-gray-light;
 
     &--title {
@@ -86,7 +92,27 @@
             .item {
                 padding: 50px 37px;
                 background-color: @color__white;
+
             }
         }
+    }
+}
+
+@media (max-width: @screen-md) {
+    .intro--title {
+        margin-bottom: 5px;
+    }
+
+    .intro--content .col .item {
+        padding: 20px 37px;
+    }
+
+    .intro--content__icon {
+        margin: 12px 0;
+    }
+
+    .intro--content__title {
+        margin-top: 16px;
+        margin-bottom: 12px;
     }
 }

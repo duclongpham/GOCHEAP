@@ -276,13 +276,15 @@
 }
 
 .icon-phone {
-
+    border: 1px solid @color__orange;
+    background-color: @color__orange;
     .icon("../images/phone_icon.png",
-        @_padding: 16px 16px,
+        @_padding: 32px 32px,
+        @_border-radius: 59px,
         @_background-position: center);
 
     @media (max-width: @screen-md) {
-        padding: 10px 10px;
-        background-size: 20px;
+        padding: 24px 24px;
+        background-size: 25px;
     }
 }

@@ -3,8 +3,6 @@ $(document).ready(function () {
         dots: true,
         arrows: false,
         customPaging: function (slider, i) {
-            console.log(slider);
-            console.log(i);
             return '<i class="far fa-circle icon-control"></i>';
         },
     });
@@ -33,10 +31,16 @@ $(document).ready(function () {
     });
 
     var nav_list = $('.header .nav-list');
-    $('.header').find('.menu').on('click', function () {
-        nav_list.addClass('nav-list-show');
+    $('.header').find('.menu, .nav-list a').on('click', function () {
+        if(!nav_list.hasClass('nav-list-show')) {
+            nav_list.addClass('nav-list-show');
+        } else {
+            setTimeout(function(){
+                nav_list.removeClass('nav-list-show');
+            },100);
+        }
     });
-    $('.header').find('.background, .close').on('click', function () {
-        nav_list.removeClass('nav-list-show');
-    })
+    // $('.header').find('.background, .close, .nav-list a').on('click', function () {
+
+    // })
 })
