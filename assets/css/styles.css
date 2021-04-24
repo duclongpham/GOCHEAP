@@ -1051,9 +1051,6 @@
   }
 }
 @media (max-width: 375px) {
-  .engaging--left__text {
-    text-indent: 25px;
-  }
   .engaging--right .item {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1068,9 +1065,6 @@
   }
   .engaging--right .item--content__title {
     text-align: center;
-  }
-  .engaging--right .item--content__text {
-    text-indent: 25px;
   }
 }
 .price-list {
