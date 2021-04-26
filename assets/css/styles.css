@@ -1707,6 +1707,9 @@
   line-height: unset;
   text-align: inherit;
 }
+.utility--right .item-body__input:focus {
+  outline: none;
+}
 .utility--right .item-body__textarea {
   min-height: 176px;
   background-color: #ffffff;
