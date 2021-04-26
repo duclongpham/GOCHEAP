@@ -59,6 +59,9 @@
   text-transform: uppercase;
   white-space: nowrap;
 }
+.btn-orange:focus {
+  outline: none;
+}
 .btn-orange:hover {
   color: #ffffff;
   background-color: #ea8e09;
@@ -85,6 +88,9 @@
   padding: 0.55555em 1.94444em;
   text-transform: uppercase;
   white-space: nowrap;
+}
+.btn-link-orange:focus {
+  outline: none;
 }
 .btn-link-orange:hover {
   color: #ffffff;
