@@ -1933,6 +1933,11 @@
     justify-content: center;
   }
 }
+@media (max-width: 767px) {
+  .footer {
+    margin-bottom: 50px;
+  }
+}
 .phone-call {
   display: inline-block;
   position: fixed;
